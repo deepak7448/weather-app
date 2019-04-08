@@ -1,0 +1,38 @@
+  body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+.navbar {
+  letter-spacing: 0.1rem;
+}
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav li a {
+  float: right;
+}
+#nav-bar ul li a:hover {
+  color: white;
+}
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+.home {
+  background-image: linear-gradient(90deg, #ffc73f 0, #fd3459);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@media only screen and (min-width: 418px) and (max-width: 991px) {
+  .nav-item {
+    margin: 0 auto;
+  }
+ }
+@media only screen and (max-width: 418px) {
+  .nav-item {
+    margin: 0 auto;
+  }
+  }

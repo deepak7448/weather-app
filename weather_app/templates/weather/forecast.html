@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% extends 'weather/base.html' %}
+  {% load static %}
+  {% block content %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Forecast Weather</title>
+  <link rel="icon" href="{% static "logo/icon.jpg" %}" type="image/icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="{% static "css/css3.css" %}" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="container" style="height:750px;    padding-right: 33px;
+    padding-left: 29px;">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom:13px;">
+        <div class="text-center text-light">
+          <h1 id="content">Easy way to search your City Weather</h1>
+        </div>
+        <h5 class="text-center"><strong>City Name must Write as Title (eg: Delhi)</strong></h5>
+      </div>
+      <form id="cityDiv" method="POST">
+        {% csrf_token %}
+        <div class="row form-group form-inline">
+
+          {{form.name}}
+          <button id="submitForecast" class="btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="footer-bottom" style="
+  margin-top: 4rem;
+">
+    <footer class="site-footer" style="background-color:#111">
+      <div class="container">
+        <p style="color:white;text-align: center;">Designed by Deepak. All rights reserved </p>
+        <div class="social-links" style="text-align:center;">
+          <a href="https://www.facebook.com/deepak.cool72" target="_blank" class="facebook" style="margin:auto;"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://plus.google.com/u/0/116513823124851985763" target="_blank" class="google-plus"><i
+              class="fab fa-google-plus-g"></i>
+            <a href="https://www.instagram.com/deepakcooll/" target="_blank" class="instagram"><i
+                class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}
+
+</html>

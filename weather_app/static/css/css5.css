@@ -1,0 +1,13 @@
+.navbar {
+    letter-spacing: 0.1rem;
+    background: rgba(0, 0, 0, 1) !important;
+  }
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+  .navbar-nav li a {
+    float: right;
+  }
+  #nav-bar ul li a:hover {
+    color: white;
+  }

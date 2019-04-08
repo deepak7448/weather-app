@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+body {
+ /* background: url("w3.jpg") no-repeat;
+  background-size: cover;*/
+  background: linear-gradient(325deg, #5782c1,#7c76a2)
+}
+.navbar {
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav li a {
+  float: right;
+}
+#nav-bar ul li a:hover {
+  color: white;
+}
+
+#cityDiv {
+  margin: auto;
+  text-align: center;
+}
+.col-sm-12 {
+  margin-top: 100px;
+}
+.text-light {
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+}
+.input-group-append {
+  margin-left: 5px;
+}
+.form-control {
+  background-color: rgba(0,0,0,0.7);
+  font-size: 20px;
+}
+input[type="text"] {
+  background: #2b333bc9;
+  color: white;
+  transition: 0.6s;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 50px;
+}
+.btn {
+  background: #3a7fcad9;
+  color: #f8f9fa;
+  border-radius: 50px;
+}
+h5 {
+  font-size: 1rem;
+  margin-top: 35px;
+  color: white;
+}
+#content
+{
+  font-size: 3.125rem;
+  margin-top: 40px;
+}
+.social-links a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-top: 10px;
+  font-size: 18px;
+  font-size: 1.125em;
+  display: inline-block;
+  margin: 0 5px;
+  text-align: center;
+  color: white;
+  line-height: normal;
+ }
+.facebook {
+   background-color: #3b5999;
+}
+.google-plus {
+   background: #dd4b39;
+}
+.instagram {
+background: #e4405f;
+}
+.home {
+  background-image: linear-gradient(90deg, #ffc73f 0, #fd3459);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.display-4
+{
+  font-family: "Ubuntu", sans-serif;
+}
+.map{
+  text-align: center;
+}
+@media only screen and (min-width: 418px) and (max-width: 991px) {
+  .nav-item {
+    margin: 0 auto;
+  }}
+
+@media only screen and (max-width: 575px) {
+   
+input[type="text"] {
+  background: #2b333bc9;
+  transition: 0.6s;
+  color: white;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 50px;
+  width: 15rem;
+  }}
+@media only screen and (max-width: 470px) {
+  .nav-item {
+    margin: 0 auto;
+  }}
+  
